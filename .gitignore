@@ -3,12 +3,16 @@
 ##
 ## Get latest from httpsgithub.comgithubgitignoreblobmasterVisualStudio.gitignore
 
+#Image File Types
 *.png
+*.jpg
+*.bmp
 
 # User-specific files
 .rsuser
 .suo
 .user
+*.csproj.user
 .userosscache
 .sln.docstates
 
