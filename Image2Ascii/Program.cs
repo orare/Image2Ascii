@@ -12,13 +12,40 @@ namespace Image2Ascii
         static void Main(string[] args)
         {
 
-            Bitmap GrayImage;
+            Bitmap grayImage;
             using (Image inputImage = Image.FromFile("Shapes.png"))
             {
                 Bitmap bitmap = new Bitmap(inputImage);
-                GrayImage = GrayScaleImage(bitmap);
+                grayImage = GrayScaleImage(bitmap);
             }
-            GrayImage.Save("test.png");
+            grayImage.Save("test.png");
+            StringBuilder asciiText = new StringBuilder();
+            
+            for(int y = 0; y < grayImage.Height; y++ )
+            {
+                for(int x = 0; x < grayImage.Width ; x++)
+                {
+                    Color pixelC = grayImage.GetPixel(x, y);
+                    if(pixelC.GetBrightness() > 0.1)
+                    {
+                        asciiText.Append("#");
+                    }
+                    else
+                    {
+                        asciiText.Append(".");
+                    }
+                }
+                asciiText.Append("\n");
+            }
+
+            Console.WriteLine(asciiText.ToString());
+
+            using (System.IO.StreamWriter file = new System.IO.StreamWriter("hereIam.txt"))
+            {
+                file.WriteLine(asciiText.ToString()); // "sb" is the StringBuilder
+            }
+
+
         }
 
         /// <summary>
