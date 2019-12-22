@@ -19,14 +19,32 @@ namespace Image2Ascii
                 grayImage = GrayScaleImage(bitmap);
             }
             grayImage.Save("test.png");
-            StringBuilder asciiText = new StringBuilder();
-            
-            for(int y = 0; y < grayImage.Height; y++ )
+
+            StringBuilder asciiText = ImageToAscii(grayImage);
+            Console.WriteLine(asciiText.ToString());
+            using (System.IO.StreamWriter file = new System.IO.StreamWriter("ascii.txt"))
             {
-                for(int x = 0; x < grayImage.Width ; x++)
+                file.WriteLine(asciiText.ToString()); 
+            }
+
+
+        }
+
+        /// <summary>
+        /// Takes a Bitmap Image and returns a StringBuilder that respresents the image in ASCII characters.
+        /// </summary>
+        /// <param name="grayImage"></param>
+        /// <returns></returns>
+        private static StringBuilder ImageToAscii(Bitmap grayImage)
+        {
+            StringBuilder asciiText = new StringBuilder();
+
+            for (int y = 0; y < grayImage.Height; y++)
+            {
+                for (int x = 0; x < grayImage.Width; x++)
                 {
                     Color pixelC = grayImage.GetPixel(x, y);
-                    if(pixelC.GetBrightness() > 0.1)
+                    if (pixelC.GetBrightness() > 0.1)
                     {
                         asciiText.Append("#");
                     }
@@ -38,14 +56,7 @@ namespace Image2Ascii
                 asciiText.Append("\n");
             }
 
-            Console.WriteLine(asciiText.ToString());
-
-            using (System.IO.StreamWriter file = new System.IO.StreamWriter("hereIam.txt"))
-            {
-                file.WriteLine(asciiText.ToString()); // "sb" is the StringBuilder
-            }
-
-
+            return asciiText;
         }
 
         /// <summary>
