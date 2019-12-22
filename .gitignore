@@ -3,6 +3,8 @@
 ##
 ## Get latest from httpsgithub.comgithubgitignoreblobmasterVisualStudio.gitignore
 
+*.png
+
 # User-specific files
 .rsuser
 .suo
