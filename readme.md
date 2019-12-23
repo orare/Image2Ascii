@@ -6,7 +6,7 @@
 
 ---
 
-###Usage
+### Usage
 -  Outputs a full 1:1 pixel to character Ascii-image.
 `Image2Ascii image.png` 
 
@@ -26,7 +26,7 @@ Output is given via the console window and written into a text file with the sam
 I recommend the scaled image option (30% is a decent start) if you want to share the image or view it easily. The full scale version will require a lot of zooming in your text editor / browser and is generally overkill.
 
 ---
-###Images
+### Images
 
 >https://pastebin.com/raw/R8tKw586
 ![](https://i.imgur.com/OjXg3gQ.png)
