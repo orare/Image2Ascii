@@ -15,7 +15,7 @@
  
  	`Image2Ascii image.png 10`  *Ascii-image scaled to 10% of its original size.*
  	
-    `Image2Ascii image.png 50`  *Ascii-image scaled to 30% of its original size.*
+    `Image2Ascii image.png 50`  *Ascii-image scaled to 50% of its original size.*
 
 - Outputs a set resolution character image.
 
