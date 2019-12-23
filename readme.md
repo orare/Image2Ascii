@@ -8,14 +8,18 @@
 
 ### Usage
 -  Outputs a full 1:1 pixel to character Ascii-image.
-`Image2Ascii image.png` 
+
+	`Image2Ascii image.png` 
 
 - Outputs a scaled image. (Recommended)
- `Image2Ascii image.png 10`  *Ascii-image scaled to 10% of its original size.*
- `Image2Ascii image.png 50`  *Ascii-image scaled to 30% of its original size.*
+ 
+ 	`Image2Ascii image.png 10`  *Ascii-image scaled to 10% of its original size.*
+ 	
+    `Image2Ascii image.png 50`  *Ascii-image scaled to 30% of its original size.*
 
 - Outputs a set resolution character image.
-`Image2Ascii image.png 300 300`  *Ascii-image will be 300 x 300 characters.*
+
+	 `Image2Ascii image.png 300 300`  *Ascii-image will be 300 x 300 characters.*
 
 ---
 
