@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Image2Ascii", "Image2Ascii\Image2Ascii.csproj", "{301D6298-F787-428A-8D1A-C7D839C8FE97}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Image2Ascii-Gui", "Image2Ascii-Gui\Image2Ascii-Gui.csproj", "{D7F1B692-E921-45F8-8755-E74D868146AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{301D6298-F787-428A-8D1A-C7D839C8FE97}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{301D6298-F787-428A-8D1A-C7D839C8FE97}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{301D6298-F787-428A-8D1A-C7D839C8FE97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7F1B692-E921-45F8-8755-E74D868146AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7F1B692-E921-45F8-8755-E74D868146AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7F1B692-E921-45F8-8755-E74D868146AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7F1B692-E921-45F8-8755-E74D868146AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
