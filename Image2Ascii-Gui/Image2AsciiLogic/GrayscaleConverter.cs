@@ -9,6 +9,10 @@ namespace Image2Ascii_Gui.Image2AsciiLogic
 {
     public static class GrayscaleConverter
     {
+        /// <summary>
+        /// Returns a new Bitmap object with grayscaled colors.
+        /// </summary>
+        /// https://stackoverflow.com/a/4004527
         public static Bitmap GrayScaleImage(Bitmap origBitmap)
         {
             Bitmap grayBitmap = new Bitmap(origBitmap.Width, origBitmap.Height);

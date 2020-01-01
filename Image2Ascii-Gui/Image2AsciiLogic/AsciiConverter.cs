@@ -9,6 +9,11 @@ namespace Image2Ascii_Gui.Image2AsciiLogic
 {
     public static class AsciiConverter
     {
+        /// <summary>
+        /// Takes a Bitmap Image and returns a StringBuilder that respresents the image in ASCII characters.
+        /// </summary>
+        /// <param name="grayImage"></param>
+        /// <returns></returns>
         public static StringBuilder ImageToAscii(Bitmap grayImage)
         {
             StringBuilder asciiText = new StringBuilder();
